@@ -1,0 +1,7 @@
+{
+  "name": "lifesnap",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
