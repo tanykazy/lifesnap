@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { GridComponent } from '../components/grid/grid.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,9 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    GridComponent
+  ]
 })
-export class HomePageModule {}
+export class HomePageModule { }
