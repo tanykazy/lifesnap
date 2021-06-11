@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-grid',
@@ -9,9 +9,21 @@ export class GridComponent implements OnInit {
 
   constructor() { }
 
+  @Input() row: Number;
+  @Input() column: Number;
+  @Input() cellsize: Number;
+
   ngOnInit() { }
 
 }
+
+/*
+  mounted: function () {
+    this.width = this.row * this.cellsize;
+    this.height = this.column * this.cellsize;
+    this.viewBox = [0, 0, this.width, this.height].join(" ");
+  },
+*/
 
 const namespace4svg = "http://www.w3.org/2000/svg";
 
